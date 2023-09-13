@@ -12,12 +12,11 @@ export default function Header()
     return (
         <header className="container-fluid">
             <div className="container">
-                <div className="row">
-                    <div className="col-6">
-                        <Image src={LogoLight} alt="RBF" className="logo-light" />
+                <div className="row justify-content-between">
+                    <div className="col-auto">
                         <Image src={Logo} alt="RBF" className="logo" />
                     </div>
-                    <div className="col-6">
+                    <div className="col-auto">
                         <div className="d-flex flex-row gap-2 justify-content-end">
                             <Link href="https://linkedin.com/in/rbfraphael" target="_blank" title="LinkedIn" className="social-link">
                                 <FontAwesomeIcon icon={faLinkedin} fixedWidth size="lg" />
