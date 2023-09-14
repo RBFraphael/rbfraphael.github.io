@@ -35,7 +35,7 @@ export default function Tecnologies()
         { category: 3, label: "CSS", value: 5 },
         { category: 3, label: "JavaScript", value: 5 },
         { category: 3, label: "TypeScript", value: 5 },
-        { category: 3, label: "React", value: 4 },
+        { category: 3, label: "React", value: 5 },
         { category: 3, label: "Next.js", value: 4 },
         { category: 3, label: "Angular", value: 3 },
         { category: 3, label: "Bootstrap", value: 5 },
@@ -48,9 +48,9 @@ export default function Tecnologies()
         { category: 5, label: "React Native", value: 3 },
 
         { category: 6, label: "Git", value: 4 },
-        { category: 6, label: "Amazon AWS", value: 3 },
-        { category: 6, label: "Digital Ocean", value: 4 },
-        { category: 6, label: "Microsoft Azure", value: 2 },
+        { category: 6, label: "Amazon AWS", value: 2 },
+        { category: 6, label: "Digital Ocean", value: 3 },
+        { category: 6, label: "Microsoft Azure", value: 3 },
     ];
 
     return (

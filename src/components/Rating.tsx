@@ -1,5 +1,5 @@
 import { faStar as OutlineStar } from "@fortawesome/free-regular-svg-icons";
-import { faStar as FilledStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as FilledStar, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
@@ -22,7 +22,12 @@ export default function Rating(props: RatingProps)
 
     return (
         <>
-            <p className="h5 fw-bold m-0">{props.label}</p>
+            <p className="h5 fw-bold m-0">
+                {props.label}
+                { props.score == 5 && (
+                    <FontAwesomeIcon icon={faTrophy} fixedWidth className="text-warning ms-1" />
+                ) }
+            </p>
             <ul className="list-inline m-0 p-0">
                 { score.map((s: number, i: number) => (
                     <li className="list-inline-item" key={i}>
