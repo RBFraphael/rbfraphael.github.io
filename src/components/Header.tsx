@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons";
+import { Dropdown } from "react-bootstrap";
 
 export default function Header()
 {
@@ -30,9 +31,18 @@ export default function Header()
                             <Link href="mailto:rbfraphael@gmail.com" target="_blank" title="Email" className="social-link">
                                 <FontAwesomeIcon icon={faEnvelope} fixedWidth size="lg" />
                             </Link>
-                            <Link href="/resume.pdf" target="_blank" title="Download CV" className="social-link" download={"Raphael Batista Fontão.pdf"}>
-                                <FontAwesomeIcon icon={faFilePdf} fixedWidth size="lg" />
-                            </Link>
+                            <Dropdown>
+                                <Dropdown.Toggle className="social-link" title="Download CV">
+                                    <FontAwesomeIcon icon={faFilePdf} fixedWidth size="lg" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="border-0 shadow-lg">
+                                    <Dropdown.Header>&bull; Download CV</Dropdown.Header>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN.pdf" target="_blank">English Version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN_Ext.pdf" target="_blank">English Version (Extended)</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR.pdf" target="_blank">Brazilian Version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR_Ext.pdf" target="_blank">Brazilian Version (Extended)</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </div>
                     </div>
                 </div>

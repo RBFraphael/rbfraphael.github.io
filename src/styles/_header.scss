@@ -18,6 +18,7 @@ header {
         display: none;
     }
 
+    button.social-link,
     a.social-link {
         width: 2.5rem;
         height: 2.5rem;
@@ -26,6 +27,7 @@ header {
         border-radius: 50%;
         color: $gray-900;
         transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        background-color: transparent;
 
         i, svg {
             position: absolute;
@@ -37,6 +39,11 @@ header {
         &:hover {
             color: $gray-100;
             background-color: $gray-900;
+            border-color: $gray-900;
+        }
+
+        &::after {
+            display: none;
         }
     }
 }
