@@ -41,6 +41,8 @@ export default function Tecnologies()
         { category: 3, label: "Bootstrap", value: 5 },
         { category: 3, label: "jQuery", value: 5 },
         { category: 3, label: "TailwindCSS", value: 2 },
+        { category: 3, label: "Svelte", value: 3 },
+        { category: 3, label: "SvelteKit", value: 3 },
         
         { category: 4, label: "Electron.js", value: 3 },
 
