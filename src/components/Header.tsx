@@ -3,7 +3,7 @@ import Image from "next/image";
 import Logo from "@/assets/images/rbf-logo.svg"
 import LogoLight from "@/assets/images/rbf-logo-light.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin, faMedium, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { Dropdown } from "react-bootstrap";
@@ -24,6 +24,9 @@ export default function Header()
                             </Link>
                             <Link href="https://github.com/rbfraphael" target="_blank" title="GitHub" className="social-link">
                                 <FontAwesomeIcon icon={faGithub} fixedWidth size="lg" />
+                            </Link>
+                            <Link href="https://medium.com/@rbfraphael" target="_blank" title="Medium" className="social-link">
+                                <FontAwesomeIcon icon={faMedium} fixedWidth size="lg" />
                             </Link>
                             <Link href="https://api.whatsapp.com/send?phone=5511969286032" target="_blank" title="WhatsApp" className="social-link">
                                 <FontAwesomeIcon icon={faWhatsapp} fixedWidth size="lg" />
