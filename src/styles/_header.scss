@@ -8,6 +8,11 @@ header {
     padding-bottom: 2.5rem;
     // background: linear-gradient(to bottom, $white 98%, rgba($white, 0) 100%);
 
+    @include media-breakpoint-down(lg){
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
     img.logo,
     img.logo-light {
         width: 6rem;

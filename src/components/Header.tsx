@@ -14,11 +14,11 @@ export default function Header()
         <header className="container-fluid">
             <div className="container">
                 <div className="row justify-content-between">
-                    <div className="col-auto">
+                    <div className="col-12 col-lg-auto text-center text-lg-start mb-2 mb-lg-0">
                         <Image src={Logo} alt="RBF" className="logo" />
                     </div>
-                    <div className="col-auto">
-                        <div className="d-flex flex-row gap-2 justify-content-end">
+                    <div className="col-12 col-lg-auto">
+                        <div className="d-flex flex-row gap-2 justify-content-center justify-content-lg-end">
                             <Link href="https://linkedin.com/in/rbfraphael" target="_blank" title="LinkedIn" className="social-link">
                                 <FontAwesomeIcon icon={faLinkedin} fixedWidth size="lg" />
                             </Link>
