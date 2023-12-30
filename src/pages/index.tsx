@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Tecnologies from "@/components/Tecnologies";
 import Contact from "@/components/Contact";
+import MediumFeed from "@/components/MediumFeed";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                 <Biography />
                 <Skills />
                 <Projects />
+                <MediumFeed />
                 <Tecnologies />
                 <Contact />
             </main>
