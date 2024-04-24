@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Photo from "@/assets/images/photo.png";
-import Photo2 from "@/assets/images/photo-2.png";
 
 export default function Biography()
 {
@@ -13,7 +12,7 @@ export default function Biography()
                     <p data-aos="fade-up">My name is Raphael, and I am a fullstack programmer with 7+ years of experience. Throughout my career, I have worked in digital agencies where I have developed a wide range of projects, from APIs and SaaS platforms to desktop and mobile applications. My expertise includes Laravel, Wordpress, and React, and I have extensive knowledge of DevOps, with a focus on Docker and Linux. I am passionate about continuous learning and constantly seek out new technologies to enhance my skills. My versatility, self-discipline, and ability to adapt to changes enable me to approach development challenges in an analytical and self-critical manner, always striving for excellence in my projects.</p>
                 </div>
                 <div className="col-12 col-lg-5" data-aos="fade-up">
-                    <Image src={Photo2} alt="Raphael Batista Fontão" className="img-fluid" />
+                    <Image src={Photo} alt="Raphael Batista Fontão" className="img-fluid" />
                 </div>
             </div>
         </section>
