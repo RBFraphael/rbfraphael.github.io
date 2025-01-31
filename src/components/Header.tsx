@@ -1,9 +1,8 @@
 import Image from "next/image";
 
 import Logo from "@/assets/images/rbf-logo.svg"
-import LogoLight from "@/assets/images/rbf-logo-light.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin, faMedium, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { Dropdown } from "react-bootstrap";

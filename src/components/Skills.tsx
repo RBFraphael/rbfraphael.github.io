@@ -1,10 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
+import { faThumbsUp, IconDefinition } from "@fortawesome/free-regular-svg-icons";
 import { faArrowTrendUp, faChildReaching, faJetFighter, faPaintRoller, faUpRightAndDownLeftFromCenter } from "@fortawesome/free-solid-svg-icons";
+
+interface Skill {
+    title: string;
+    text: string;
+    icon: IconDefinition;
+}
 
 export default function Skills()
 {
-    const skills = [
+    const skills: Skill[] = [
         {
             title: "Look professional",
             text: "With or without a provided guideline for UX/UI, I build apps, websites ans SaaS that look beautiful and professional.",
@@ -46,7 +52,7 @@ export default function Skills()
                         <h2 className="display-2 fw-semibold mb-5" data-aos="fade-up">I build things that</h2>
                     </div>
                     <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-lg-5">
-                        { skills.map((skill: any, i: number) => (
+                        { skills.map((skill: Skill, i: number) => (
                             <div className="feature col mb-5" key={i} data-aos="fade-right" data-aos-delay={i * 100}>
                                 <div className="feature-icon mb-3 text-white shadow">
                                     <FontAwesomeIcon icon={skill.icon} fixedWidth size="lg" />

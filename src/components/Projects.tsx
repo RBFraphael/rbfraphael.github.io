@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import ErpFundacaoFatThumb from "@/assets/images/erp-fundacao-fat.jpg";
 import CryopraxisThumb from "@/assets/images/cryopraxis.jpg";
@@ -12,7 +12,7 @@ interface IProject {
     title: string;
     description: string;
     image: {
-        src: any
+        src: StaticImageData
         alt: string;
         width: number;
         height: number;

@@ -4,8 +4,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+interface FeedJson {
+    status: string;
+    feed: {
+        url: string;
+        title: string;
+        link: string;
+        author: string;
+        description: string;
+        image: string;
+    };
+    items: Post[];
+}
+
+interface Post {
+    title: string;
+    description: string;
+    content: string;
+    pubDate: string;
+    link: string;
+    thumbnail: string;
+    guid: string;
+    author: string;
+};
+
 export default function MediumFeed () {
-    const [posts, setPosts] = useState<any[]>([]);
+    const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
         loadPosts();
@@ -14,10 +38,10 @@ export default function MediumFeed () {
     const loadPosts = () => {
         axios.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40rbfraphael%3Ft%3D${(new Date()).getTime()}`, {
             headers: { 'Accept': "application/json" }
-        }).then((res: AxiosResponse<any>) => {
-            let latestPosts = res.data.items.slice(0, 4).map((post: any) => {
-                let postBody = (new DOMParser()).parseFromString(post.description, "text/html");
-                let previewImage: string = postBody.querySelector("img")?.src ?? "";
+        }).then((res: AxiosResponse<FeedJson>) => {
+            const latestPosts = res.data.items.slice(0, 4).map((post: Post) => {
+                const postBody = (new DOMParser()).parseFromString(post.description, "text/html");
+                const previewImage: string = postBody.querySelector("img")?.src ?? "";
 
                 post.thumbnail = previewImage;
                 
@@ -45,7 +69,6 @@ export default function MediumFeed () {
                                 <Link href={post.link} target="_blank" className="text-black">
                                     <h3 className="fw-bold">{ post.title }</h3>
                                 </Link>
-                                <p>{ post.content.subtitle }</p>
                             </div>
                             <div className="image">
                                 <div className="post-image">

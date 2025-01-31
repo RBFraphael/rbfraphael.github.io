@@ -1,8 +1,19 @@
 import Rating from "./Rating";
 
+interface Tech {
+    category: number;
+    label: string;
+    value: number;
+};
+
+interface Category {
+    label: string;
+    theme: string;
+}
+
 export default function Tecnologies()
 {
-    const categories = [
+    const categories: Category[] = [
         { label: "DevOps", theme: "primary" },
         { label: "Database", theme: "black" },
         { label: "Back-end", theme: "warning" },
@@ -12,7 +23,7 @@ export default function Tecnologies()
         { label: "Misc", theme: "info" },
     ];
 
-    const technicalStuff = [
+    const technicalStuff: Tech[] = [
         { category: 0, label: "Docker", value: 3 },
         { category: 0, label: "Linux", value: 4 },
         { category: 0, label: "Apache", value: 3 },
@@ -64,8 +75,8 @@ export default function Tecnologies()
                         <h2 className="display-2 fw-semibold mb-5" data-aos="fade-up">Technical stuff</h2>
                     </div>
                     <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-5">
-                        { technicalStuff.map((t: any, i: number) => {
-                            let category = categories[t.category];
+                        { technicalStuff.map((t: Tech, i: number) => {
+                            const category = categories[t.category];
                             return (
                                 <div className="col" key={i} data-aos="zoom-in" data-aos-delay={i * 10}>
                                     <span className={`badge bg-${category.theme} rounded-pill`}>{ category.label }</span>

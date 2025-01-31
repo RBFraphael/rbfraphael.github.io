@@ -18,7 +18,7 @@ export default function Rating(props: RatingProps)
                 ) }
             </p>
             <ul className="list-inline m-0 p-0">
-                { [...Array(5)].map((_: any, i: number) => (
+                { [...Array(5)].map((_: null, i: number) => (
                     <li className="list-inline-item" key={i}>
                         <FontAwesomeIcon icon={(i+1) > props.score ? OutlineStar : FilledStar} fixedWidth />
                     </li>

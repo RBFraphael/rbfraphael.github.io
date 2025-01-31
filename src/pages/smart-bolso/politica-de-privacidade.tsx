@@ -1,5 +1,4 @@
 import Head from "next/head";
-import "@/styles/privacy-policy.scss";
 
 export default function SmartBolsoPrivacyPolicyPt()
 {
@@ -11,7 +10,7 @@ export default function SmartBolsoPrivacyPolicyPt()
 
             <main className="container">
                 <div className="row py-5">
-                    <div className="col-12">
+                    <div className="col-12 privacy-policy">
 
                         <div className="mb-5">
                             <h1>Política de Privacidade</h1>
