@@ -33,6 +33,7 @@ export default function Tecnologies()
         { category: 1, label: "MariaDB", value: 3 },
         { category: 1, label: "PostgreSQL", value: 3 },
         { category: 1, label: "MongoDB", value: 3 },
+        { category: 1, label: "SQL Server", value: 2 },
 
         { category: 2, label: "PHP", value: 5 },
         { category: 2, label: "Laravel", value: 5 },
@@ -41,6 +42,7 @@ export default function Tecnologies()
         { category: 2, label: "Node.js", value: 3 },
         { category: 2, label: "Express.js", value: 3 },
         { category: 2, label: "Nest.js", value: 2 },
+        { category: 2, label: ".NET Core", value: 2 },
 
         { category: 3, label: "HTML", value: 5 },
         { category: 3, label: "CSS", value: 5 },

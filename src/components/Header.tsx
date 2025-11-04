@@ -38,9 +38,17 @@ export default function Header()
                                     <FontAwesomeIcon icon={faFilePdf} fixedWidth size="lg" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="border-0 shadow-lg">
-                                    <Dropdown.Header>&bull; Download CV</Dropdown.Header>
-                                    <Dropdown.Item href="/resume/v2/Resume EN-US.pdf" target="_blank">English Version</Dropdown.Item>
-                                    <Dropdown.Item href="/resume/v2/Currículo PT-BR.pdf" target="_blank">Portuguese Version</Dropdown.Item>
+                                    <Dropdown.ItemText>English</Dropdown.ItemText>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN.pdf" target="_blank">&bull; Short version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN_Ext.pdf" target="_blank">&bull; Extended version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/v2/Resume EN-US.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
+                                    
+                                    <Dropdown.Divider />
+                                    
+                                    <Dropdown.ItemText>Portuguese</Dropdown.ItemText>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR.pdf" target="_blank">&bull; Short version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR_Ext.pdf" target="_blank">&bull; Extended version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/v2/Currículo PT-BR.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
