@@ -41,14 +41,14 @@ export default function Header()
                                     <Dropdown.ItemText>English</Dropdown.ItemText>
                                     <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN.pdf" target="_blank">&bull; Short version</Dropdown.Item>
                                     <Dropdown.Item href="/resume/RaphaelBatistaFontao_EN_Ext.pdf" target="_blank">&bull; Extended version</Dropdown.Item>
-                                    <Dropdown.Item href="/resume/v2/Resume EN-US.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/modern/Resume EN-US.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
                                     
                                     <Dropdown.Divider />
                                     
                                     <Dropdown.ItemText>Portuguese</Dropdown.ItemText>
                                     <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR.pdf" target="_blank">&bull; Short version</Dropdown.Item>
                                     <Dropdown.Item href="/resume/RaphaelBatistaFontao_PT-BR_Ext.pdf" target="_blank">&bull; Extended version</Dropdown.Item>
-                                    <Dropdown.Item href="/resume/v2/Currículo PT-BR.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
+                                    <Dropdown.Item href="/resume/modern/Currículo PT-BR.pdf" target="_blank">&bull; Modern version</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
