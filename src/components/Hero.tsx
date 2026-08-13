@@ -8,8 +8,8 @@ export default function Hero()
             <div className="row vh-75 align-items-center">
                 <div className="col-12 text-center">
                     <h1 className="h4 text-uppercase text-primary mb-4" data-aos="fade-up">Raphael Batista Fontão</h1>
-                    <h2 className="display-1 mb-4 fw-semibold" data-aos="zoom-in">Fullstack Developer</h2>
-                    <h3 className="h4 text-muted" data-aos="fade-down">PHP & JavaScript/TypeScript <span style={{whiteSpace:"nowrap"}}>Mid-Senior</span> Specialist</h3>
+                    <h2 className="display-1 mb-4 fw-semibold" data-aos="zoom-in">Senior Fullstack Developer</h2>
+                    <h3 className="h4 text-muted" data-aos="fade-down">PHP & JavaScript/TypeScript Specialist</h3>
                 </div>
             </div>
             <div className="row">
